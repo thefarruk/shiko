@@ -39,7 +39,7 @@ header {
 
 .languages button:hover,
 .theme-toggle button:hover {
-  background-color: #0DD4C7;
+  background-color: #0dcaf0;
 }
 
 .contacts,
@@ -70,7 +70,7 @@ header {
 }
 
 .contacts a:hover {
-  background-color: #0DD4C7;
+  background-color: #0dcaf0;
   color: #fff;
 }
 
