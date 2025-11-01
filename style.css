@@ -32,14 +32,14 @@ header {
   border-radius: 8px;
   cursor: pointer;
   font-weight: 600;
-  background-color: #676C70;
+  background-color: #0DD4C7;
   color: #fff;
   transition: background-color 0.3s;
 }
 
 .languages button:hover,
 .theme-toggle button:hover {
-  background-color: #6ED9FA;
+  background-color: #0DD4C7;
 }
 
 .contacts,
@@ -60,17 +60,17 @@ header {
   gap: 8px;
   margin: 8px 12px;
   text-decoration: none;
-  color: #676C70;
+  color: #0DD4C7;
   font-weight: 500;
   font-size: 1rem;
-  border: 1px solid #676C70;
+  border: 1px solid #0DD4C7;
   padding: 8px 14px;
   border-radius: 6px;
   transition: background-color 0.3s, color 0.3s;
 }
 
 .contacts a:hover {
-  background-color: #676C70;
+  background-color: #0DD4C7;
   color: #fff;
 }
 
