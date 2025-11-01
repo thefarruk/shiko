@@ -140,3 +140,30 @@ footer {
   background-color: #0dcaf0;
   color: #1c1c1c;
 }
+/* Light mode defaults */
+body {
+    background-color: white;
+    color: black;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+/* Example of using CSS variables for more granular control */
+:root {
+    --primary-bg-color: white;
+    --primary-text-color: black;
+}
+
+body.dark-mode {
+    --primary-bg-color: black;
+    --primary-text-color: white;
+}
+
+body {
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+}
