@@ -1,6 +1,22 @@
-function toggleTheme() {
-  document.body.classList.toggle('dark-mode');
+const themeToggleBtn = document.getElementById('theme-toggle');
+const body = document.body;
+
+// Check for saved theme preference in localStorage
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme === 'dark') {
+    body.classList.add('dark-mode');
 }
+
+themeToggleBtn.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+
+    // Save theme preference to localStorage
+    if (body.classList.contains('dark-mode')) {
+        localStorage.setItem('theme', 'dark');
+    } else {
+        localStorage.setItem('theme', 'light');
+    }
+});
 
 function setLanguage(lang) {
   alert('Dil değiştirildi: ' + lang.toUpperCase());
