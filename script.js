@@ -48,6 +48,18 @@ if (form) {
   });
 }
 
+
+// DOM READY действия
+window.addEventListener('DOMContentLoaded', () => {
+  // Кнопки темы (если есть дополнительные)
+  document.querySelectorAll('.theme-toggle button')
+    .forEach(btn => btn.addEventListener('click', () => themeToggleBtn.click()));
+
+  // Кнопки языков
+  document.querySelectorAll('.languages button')
+    .forEach(btn => btn.addEventListener('click', () => setLanguage(btn.textContent.trim())));
+});
+
 // Аккордеон Ofis Hizmetlerimiz
 const accBtn = document.querySelector('.accordion-btn');
 const accContent = document.querySelector('.accordion-content');
@@ -60,13 +72,3 @@ accBtn.addEventListener('click', () => {
   }
 });
 
-// DOM READY действия
-window.addEventListener('DOMContentLoaded', () => {
-  // Кнопки темы (если есть дополнительные)
-  document.querySelectorAll('.theme-toggle button')
-    .forEach(btn => btn.addEventListener('click', () => themeToggleBtn.click()));
-
-  // Кнопки языков
-  document.querySelectorAll('.languages button')
-    .forEach(btn => btn.addEventListener('click', () => setLanguage(btn.textContent.trim())));
-});
