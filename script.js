@@ -72,15 +72,4 @@ accBtn.addEventListener('click', () => {
   }
 });
 
-// Рабочий аккордеон "Ofis Hizmetlerimiz"
-const accBtn = document.querySelector('.accordion-btn');
-const accContent = document.querySelector('.accordion-content');
-
-accBtn.addEventListener('click', () => {
-  if (accContent.style.display === 'block') {
-    accContent.style.display = 'none';
-  } else {
-    accContent.style.display = 'block';
-  }
-});
 
