@@ -1,5 +1,17 @@
 const themeToggleBtn = document.getElementById('theme-toggle');
 const body = document.body;
+const toggleButton = document.getElementById('toggle-button');
+const hiddenLink = document.getElementById('hidden-link');
+
+toggleButton.addEventListener('click', () => {
+  if (hiddenLink.style.display === 'none') {
+    hiddenLink.style.display = 'block'; // Показать
+    toggleButton.textContent = 'Скрыть ссылку';
+  } else {
+    hiddenLink.style.display = 'none'; // Скрыть
+    toggleButton.textContent = 'Показать ссылку';
+  }
+});
 
 // Check for saved theme preference in localStorage
 const savedTheme = localStorage.getItem('theme');
