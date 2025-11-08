@@ -2,20 +2,6 @@
 const themeToggleBtn = document.getElementById('theme-toggle');
 const body = document.body;
 
-// Показ/скрытие ссылки
-const toggleButton = document.getElementById('toggle-button');
-const hiddenLink = document.getElementById('hidden-link');
-
-toggleButton.addEventListener('click', () => {
-  if (hiddenLink.style.display === 'none' || hiddenLink.style.display === '') {
-    hiddenLink.style.display = 'block';
-    toggleButton.textContent = 'Скрыть ссылку';
-  } else {
-    hiddenLink.style.display = 'none';
-    toggleButton.textContent = 'Показать ссылку';
-  }
-});
-
 // Загружаем тему из памяти
 const savedTheme = localStorage.getItem('theme');
 if (savedTheme === 'dark') {
