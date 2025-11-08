@@ -8,6 +8,46 @@ html, body {
   transition: background-color 0.3s, color 0.3s;
 }
 
+.accordion {
+  width: 90%;
+  margin: 20px auto;
+}
+
+.accordion-btn {
+  width: 100%;
+  padding: 15px;
+  background: #0078ff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.accordion-btn:hover {
+  background: #005fcc;
+}
+
+.accordion-content {
+  display: none;
+  background: #f7f7f7;
+  padding: 15px;
+  margin-top: 8px;
+  border-radius: 8px;
+  line-height: 1.6;
+}
+
+.accordion-content h3 {
+  margin-top: 15px;
+  color: #333;
+}
+
+.accordion-content ul {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
 header {
   background-image: url("logo-removebg-preview.png");
   background-size: 100%;
