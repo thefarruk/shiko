@@ -10,7 +10,7 @@ html, body {
 
 header {
   background-image: url("logo.png");
-  background-size: 100px;
+  background-size: 100%;
   background-repeat: no-repeat;
 }
 
