@@ -25,10 +25,6 @@ html, body {
   transition: background 0.3s;
 }
 
-.accordion-btn:hover {
-  background: #005fcc;
-}
-
 .accordion-content {
   display: none;
   background: #f7f7f7;
@@ -36,16 +32,6 @@ html, body {
   margin-top: 8px;
   border-radius: 8px;
   line-height: 1.6;
-}
-
-.accordion-content h3 {
-  margin-top: 15px;
-  color: #333;
-}
-
-.accordion-content ul {
-  margin-left: 20px;
-  margin-bottom: 10px;
 }
 
 .full-img {
