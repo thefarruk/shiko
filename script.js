@@ -59,8 +59,7 @@ window.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.languages button')
     .forEach(btn => btn.addEventListener('click', () => setLanguage(btn.textContent.trim())));
 });
-
-// Аккордеон Ofis Hizmetlerimiz
+// Рабочий аккордеон "Ofis Hizmetlerimiz"
 const accBtn = document.querySelector('.accordion-btn');
 const accContent = document.querySelector('.accordion-content');
 
