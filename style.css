@@ -9,6 +9,12 @@ html, body {
 }
 
 header {
+  background-image: url("logo.png");
+  background-size: 120px;
+  background-repeat: no-repeat;
+}
+
+header {
   background-color: #fff;
   padding: 30px 20px;
   text-align: center;
