@@ -59,6 +59,19 @@ window.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.languages button')
     .forEach(btn => btn.addEventListener('click', () => setLanguage(btn.textContent.trim())));
 });
+
+// Аккордеон Ofis Hizmetlerimiz
+const accBtn = document.querySelector('.accordion-btn');
+const accContent = document.querySelector('.accordion-content');
+
+accBtn.addEventListener('click', () => {
+  if (accContent.style.display === 'block') {
+    accContent.style.display = 'none';
+  } else {
+    accContent.style.display = 'block';
+  }
+});
+
 // Рабочий аккордеон "Ofis Hizmetlerimiz"
 const accBtn = document.querySelector('.accordion-btn');
 const accContent = document.querySelector('.accordion-content');
