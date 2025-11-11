@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shiko - Banka Bilgileri</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css">
+
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+  <header>
+    <img src="img/logo-removebg-preview.png" alt="logo" width="100" height="100">
+    <p>Şihnazarov | Türkiye, İstanbul</p>
+
+    <div class="lang-theme">
+      <div class="languages">
+        <button type="button">TR</button>
+        <button type="button">TM</button>
+        <button type="button">RU</button>
+      </div>
+      <div class="theme-toggle">
+        <button id="theme-toggle" type="button">Tema Değiştir</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Контакты -->
+  <section class="contacts">
+    <a href="tel:+905550373997"><i class="fas fa-phone"></i> Arama</a>
+    <a href="sms:+905550373997"><i class="fas fa-sms"></i> SMS</a>
+    <a href="https://wa.me/905550373997"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+    <a href="https://t.me/shihnazaralymov"><i class="fab fa-telegram"></i> Telegram</a>
+    <a href="https://instagram.com/shihnazaralymov"><i class="fab fa-instagram"></i> Instagram</a>
+
+    <a class="contact-email" href="mailto:alymovshihnazar@gmail.com">
+      <i class="fas fa-envelope"></i> Email
+    </a>
+  </section>
+
+  <!-- Офисные услуги -->
+  <section class="services">
+    <div class="accordion">
+
+      <button class="accordion-btn" data-toggle="services-body">
+        Ofis Hizmetlerimiz
+        <i class="fas fa-chevron-down"></i>
+      </button>
+
+      <div id="services-body" class="collapse">
+        <div class="link-box">
+  <a href="https://www.tmgroupeduco.com/" target="_blank" class="link-btn">
+    TM GROUP EDUCATION & CONSULTING
+  </a>
+</div>
+
+  
+    <div class="accordion-content">
+      <h3>1. Eğitim Danışmanlığı</h3>
+      <ul>
+        <li>Yurtdışı eğitim kurumlarının seçimi</li>
+        <li>Hedeflere göre analiz</li>
+        <li>Eğitim yol haritası</li>
+      </ul>
+
+      <h3>2. Üniversite ve Okul Kayıtları</h3>
+      <ul>
+        <li>Belge hazırlama</li>
+        <li>Süreç takibi</li>
+        <li>Tarih ve gereksinim kontrolü</li>
+      </ul>
+
+      <h3>3. Vize Danışmanlığı</h3>
+      <ul>
+        <li>Vize evrakları</li>
+        <li>Gereksinim danışmanlığı</li>
+        <li>Rehberlik</li>
+      </ul>
+
+      <h3>4. İkamet ve Çalışma İzni</h3>
+      <ul>
+        <li>İkamet başvurusu</li>
+        <li>Çalışma izni</li>
+        <li>Yasal danışmanlık</li>
+      </ul>
+
+      <h3>5. Kişisel Danışmanlık</h3>
+      <ul>
+        <li>Bireysel görüşme</li>
+        <li>Uyum desteği</li>
+        <li>Yeni yaşam planlama</li>
+      </ul>
+
+      <h3>6. Bilgilendirme Desteği</h3>
+      <ul>
+        <li>Düzenli bilgi</li>
+        <li>Adım-adım talimat</li>
+        <li>7/24 destek</li>
+      </ul>
+
+      <h3>7. A’dan Z’ye Tam Paket</h3>
+      <ul>
+        <li>Kabul + vize + ikamet</li>
+        <li>Yerleşim planlama</li>
+        <li>Yurtdışı yaşam desteği</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Переводы -->
+  <section class="transfers">
+    <div class="accordion">
+
+      <button class="accordion-btn" data-toggle="bank-section">
+        Ülke Dışı Para Gönderme
+        <i class="fas fa-chevron-down"></i>
+      </button>
+
+      <div id="bank-section" class="collapse">
+
+        <section id="bank-info" class="accounts">
+          <h2>Banka Hesapları</h2>
+
+          <!-- ✅ Конкретный счёт -->
+          <!-- ✅ Garanti -->
+          <div class="account">
+            <button class="account-toggle" aria-expanded="false">
+              <span>
+                <img class="bank-logo" src="img/banks/garanti.png" alt="Garanti">
+                Garanti Bank (TRY – USD)</span>
+              <i class="fas fa-chevron-right"></i>
+            </button>
+
+            <div class="account-body" hidden>
+              <p>
+                <strong>IBAN TRY:</strong>
+                <span class="copy-text">TR51 0006 2000 6320 0006 6694 67</span>
+                <button class="copy-btn" data-copy="TR51 0006 2000 6320 0006 6694 67">Kopyala</button>
+              </p>
+
+              <p>
+                <strong>IBAN USD:</strong>
+                <span class="copy-text">TR26 0006 2000 6320 0009 0967 60</span>
+                <button class="copy-btn" data-copy="TR26 0006 2000 6320 0009 0967 60">Kopyala</button>
+              </p>
+            </div>
+          </div>
+
+          <!-- ✅ Ziraat -->
+          <div class="account">
+            <button class="account-toggle" aria-expanded="false">
+              <span>
+                <img class="bank-logo" src="img/banks/ziraat.png" alt="Ziraat">
+                Ziraat Bankası (TRY – USD)</span>
+              <i class="fas fa-chevron-right"></i>
+            </button>
+
+            <div class="account-body" hidden>
+              <p>
+                <strong>IBAN TRY:</strong>
+                <span class="copy-text">TR2600 0100 2131 7564 2356 5005</span>
+                <button class="copy-btn" data-copy="TR2600 0100 2131 7564 2356 5005">Kopyala</button>
+              </p>
+
+              <p>
+                <strong>IBAN USD:</strong>
+                <span class="copy-text">TR9600 0100 2131 7564 2356 5006</span>
+                <button class="copy-btn" data-copy="TR9600 0100 2131 7564 2356 5006">Kopyala</button>
+              </p>
+            </div>
+          </div>
+
+          <!-- ✅ İşbank -->
+          <div class="account">
+            <button class="account-toggle" aria-expanded="false">
+              <span>
+                <img class="bank-logo" src="img/banks/is.png" alt="İşbank">
+                İşbank</span>
+              <i class="fas fa-chevron-right"></i>
+            </button>
+
+            <div class="account-body" hidden>
+              <p>
+                <strong>IBAN TRY:</strong>
+                <span class="copy-text">TR5300 0640 0000 1140 0099 3169</span>
+                <button class="copy-btn" data-copy="TR530006400000114000993169">Kopyala</button>
+              </p>
+
+              <p>
+                <strong>IBAN USD:</strong>
+                <span class="copy-text">TR5900 0640 0000 2140 0025 7505</span>
+                <button class="copy-btn" data-copy="TR590006400000214000257505">Kopyala</button>
+              </p>
+            </div>
+          </div>
+
+          <!-- ✅ Vakıfbank -->
+          <div class="account">
+            <button class="account-toggle" aria-expanded="false">
+              <span>
+                <img class="bank-logo" src="img/banks/vakif.png" alt="Vakıfbank">
+                Vakıfbank</span>
+              <i class="fas fa-chevron-right"></i>
+            </button>
+
+            <div class="account-body" hidden>
+              <p>
+                <strong>IBAN TRY:</strong>
+                <span class="copy-text">TR63 0001 5001 5800 7317 3967 32</span>
+                <button class="copy-btn" data-copy="TR63 0001 5001 5800 7317 3967 32">Kopyala</button>
+              </p>
+
+              <p>
+                <strong>IBAN USD:</strong>
+                <span class="copy-text">TR65 0001 5001 5804 8022 7796 27</span>
+                <button class="copy-btn" data-copy="TR65 0001 5001 5804 8022 7796 27">Kopyala</button>
+              </p>
+            </div>
+          </div>
+
+          <!-- ✅ Сбербанк -->
+          <div class="account">
+            <button class="account-toggle" aria-expanded="false">
+              <span>
+                <img class="bank-logo" src="img/banks/sber.png" alt="Sberbank">
+                Sberbank (RUB)</span>
+              <i class="fas fa-chevron-right"></i>
+            </button>
+
+            <div class="account-body" hidden>
+              <p>
+                <strong>Telefon:</strong>
+                <span class="copy-text">+7 926 084 39 97</span>
+                <button class="copy-btn" data-copy="+7 926 084 39 97">Kopyala</button>
+              </p>
+
+              <p>
+                <strong>Kart:</strong>
+                <span class="copy-text">2202206308904304</span>
+                <button class="copy-btn" data-copy="2202206308904304">Kopyala</button>
+              </p>
+            </div>
+          </div>
+
+          <!-- ✅ USDT -->
+          <div class="account">
+            <button class="account-toggle" aria-expanded="false">
+              <span>
+                <img class="bank-logo" src="img/banks/money.png" alt="money">
+                Tether USDT (TRC20) </span>
+              <i class="fas fa-chevron-right"></i>
+            </button>
+
+            <div class="account-body" hidden>
+
+              <img src="img/usdt.webp" class="crypto-img" alt="USDT">
+
+              <p>
+                <strong>Adres:</strong>
+                <span class="copy-text">TRswofHEP2mukbjAFLbBXHN342BUxarLNj</span>
+                <button class="copy-btn" data-copy="TRswofHEP2mukbjAFLbBXHN342BUxarLNj">Kopyala</button>
+              </p>
+
+              <p>
+                <strong>Network:</strong>
+                <span class="copy-text">TRON (TRC20)</span>
+                <button class="copy-btn" data-copy="TRON (TRC20)">Kopyala</button>
+              </p>
+
+            </div>
+          </div>
+
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <!-- Форма -->
+ <section class="form">
+  <h2>İletişim Formu</h2>
+
+  <form>
+    <input type="text" placeholder="Adınız Soyadınız" required>
+    <input type="email" placeholder="Email Adresiniz" required>
+    <textarea placeholder="Mesajınız"></textarea>
+
+    <button type="submit">Gönder</button>
+  </form>
+</section>
+
+
+  <footer>
+    <p>&copy; 2025 Shiko. Tüm hakları saklıdır.</p>
+  </footer>
+
+</body>
+</html>

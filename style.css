@@ -1,0 +1,293 @@
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f5f5;
+  color: #333;
+  transition: .3s;
+}
+
+/* HEADER */
+header {
+  background: #fff;
+  text-align: center;
+  padding: 30px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.lang-theme {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.languages button,
+#theme-toggle {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #0DD4C7;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.contacts,
+.services,
+.transfers,
+.accounts,
+.form {
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,.06);
+  margin: 15px;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+/* CONTACTS */
+.contacts {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.contacts a {
+  border: 1px solid #0DD4C7;
+  color: #0DD4C7;
+  padding: 8px 14px;
+  border-radius: 7px;
+  font-weight: 600;
+  display: flex;
+  gap: 6px;
+}
+
+.contact-email {
+  background: linear-gradient(90deg,#2d9cdb,#2b6ef6);
+  color: #fff !important;
+  border: none !important;
+}
+
+/* ACCORDIONS */
+.accordion-btn {
+  width: 100%;
+  padding: 15px;
+  border-radius: 8px;
+  border: none;
+  background: #0078ff;
+  color: #fff;
+  font-size: 17px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.collapse {
+  margin-top: 10px;
+  display: none;
+}
+
+.collapse.show {
+  display: block;
+}
+
+/* SERVICES (BACKGROUND TEXTURE) */
+.accordion-content {
+  margin-top: 20px;
+  padding: 25px;
+  border-radius: 12px;
+  color: #fff;
+
+  background-image:
+    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+    url("img/tmgroup.jpg");
+
+  background-size: cover;
+  background-position: center;
+}
+
+/* BANK ACCOUNTS */
+.account {
+  border-bottom: 1px solid #ddd;
+}
+
+.account-toggle {
+  width: 100%;
+  background: transparent;
+  border: none;
+  padding: 12px 0;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.account-body {
+  padding: 10px 5px 15px;
+}
+
+.copy-btn {
+  background: #0DD4C7;
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-size: .8rem;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.copy-btn:hover {
+  background: #0dcaf0;
+}
+
+.crypto-img {
+  width: 70px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+/* DARK MODE */
+body.dark-mode {
+  background: #1c1c1c;
+  color: #ddd;
+}
+
+.dark-mode header,
+.dark-mode .contacts,
+.dark-mode .services,
+.dark-mode .transfers,
+.dark-mode .form {
+  background: #2b2b2b;
+  color: #fff;
+}
+
+.dark-mode .accounts {
+  background: #333;
+  color: #fff;
+}
+
+.dark-mode .account-toggle {
+  color: #fff;
+}
+
+.dark-mode .copy-btn {
+  background: #0dcaf0;
+  color: #111;
+}
+.link-box {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.link-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #0DD4C7;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 700;
+  transition: .25s;
+}
+
+.link-btn:hover {
+  background: #0dcaf0;
+}
+/* Контейнер формы */
+.form {
+  padding: 25px;
+  margin: 15px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+/* Заголовок */
+.form h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #0078ff;
+}
+
+/* Инпуты */
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.25s;
+  background: #fafafa;
+}
+
+.form input:focus,
+.form textarea:focus {
+  border-color: #0DD4C7;
+  background: #fff;
+  box-shadow: 0 0 6px rgba(13,212,199,0.3);
+}
+
+/* Текстовое поле */
+.form textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+/* Кнопка */
+.form button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: #0DD4C7;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form button:hover {
+  background: #0dcaf0;
+}
+
+/* Темная тема */
+.dark-mode .form {
+  background: #2b2b2b;
+}
+
+.dark-mode .form h2 {
+  color: #0dcaf0;
+}
+
+.dark-mode .form input,
+.dark-mode .form textarea {
+  background: #1f1f1f;
+  color: #fff;
+  border-color: #555;
+}
+
+.dark-mode .form input:focus,
+.dark-mode .form textarea:focus {
+  border-color: #0dcaf0;
+  box-shadow: 0 0 6px rgba(13,212,199,0.3);
+}
+
+.dark-mode .form button {
+  background: #0dcaf0;
+  color: #111;
+}
+.bank-logo {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+  margin-right: 10px;
+  vertical-align: middle;
+  border-radius: 4px;
+}
