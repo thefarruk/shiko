@@ -122,6 +122,14 @@ header {
   font-weight: 700;
   cursor: pointer;
 }
+.bank-logo {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+  margin-right: 10px;
+  vertical-align: middle;
+  border-radius: 4px;
+}
 
 .account-body {
   padding: 10px 5px 15px;
@@ -282,12 +290,4 @@ body.dark-mode {
 .dark-mode .form button {
   background: #0dcaf0;
   color: #111;
-}
-.bank-logo {
-  width: 26px;
-  height: 26px;
-  object-fit: contain;
-  margin-right: 10px;
-  vertical-align: middle;
-  border-radius: 4px;
 }
