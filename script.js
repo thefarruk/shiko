@@ -63,3 +63,69 @@ document.querySelector("form")?.addEventListener("submit", e => {
   alert("Mesaj gönderildi!");
   e.target.reset();
 });
+
+// ===== СЛОВАРЬ =====
+const translations = {
+  tr: {
+    form_title: "İletişim Formu",
+    name_placeholder: "Adınız Soyadınız",
+    email_placeholder: "Email Adresiniz",
+    msg_placeholder: "Mesajınız",
+    send_btn: "Gönder",
+
+    bank_title: "Banka Hesapları",
+    office_title: "Ofis Hizmetlerimiz",
+    transfer_title: "Ülke Dışı Para Gönderme"
+  },
+
+  tm: {
+    form_title: "Habarlaşmak Formy",
+    name_placeholder: "Adyňyz Familiýaňyz",
+    email_placeholder: "Email Salgyňyz",
+    msg_placeholder: "Habaryňyz",
+    send_btn: "Ugrat",
+
+    bank_title: "Bank Hasaplary",
+    office_title: "Ofis Hyzmatlary",
+    transfer_title: "Ýurt Daşyna Pul Ugratmak"
+  },
+
+  ru: {
+    form_title: "Форма Связи",
+    name_placeholder: "Ваше имя и фамилия",
+    email_placeholder: "Ваш email",
+    msg_placeholder: "Ваше сообщение",
+    send_btn: "Отправить",
+
+    bank_title: "Банковские Счета",
+    office_title: "Офисные Услуги",
+    transfer_title: "Международный Перевод Денег"
+  }
+};
+
+// ===== ФУНКЦИЯ ПЕРЕВОДА =====
+function setLanguage(lang) {
+  const t = translations[lang];
+
+  // Заголовки
+  document.querySelector("#form_title").textContent = t.form_title;
+  document.querySelector("#bank_title").textContent = t.bank_title;
+  document.querySelector("#office_title").textContent = t.office_title;
+  document.querySelector("#transfer_title").textContent = t.transfer_title;
+
+  // Плейсхолдеры
+  document.querySelector("#name_input").placeholder = t.name_placeholder;
+  document.querySelector("#email_input").placeholder = t.email_placeholder;
+  document.querySelector("#msg_input").placeholder = t.msg_placeholder;
+
+  // Кнопка
+  document.querySelector("#send_btn").textContent = t.send_btn;
+}
+
+// ===== ОБРАБОТКА КНОПОК =====
+document.querySelectorAll(".languages button").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const lang = btn.textContent.trim().toLowerCase();
+    setLanguage(lang);
+  });
+});
